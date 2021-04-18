@@ -1,0 +1,46 @@
+fieldset{
+background-image:url(images/background.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+height:24em;
+margin:15px 15px;
+padding:15% 0% 0% 35%;
+}
+
+#fset{
+ position:center;
+
+}
+
+#lgin{
+padding:1px 17px 1px 10px;
+}
+#cncl{
+padding:1px 10px 1px 10px;
+}
+
+#nu{
+background-color: green; 
+color: white; padding: 10px;
+ border: 0px;"
+}
+#fp{
+background-color:orangered; 
+color: white; padding: 10px;
+ border: 0px;"
+}
+
+#logButton{
+	background-color:rgba(0,255,0,0.7); 
+color: white; padding: 10px;
+ border: 0px;"
+ position:absolute;
+ margin-left:50px;
+
+}
+
+legend{
+margin:0px 0px 0px 15%;
+
+}
+

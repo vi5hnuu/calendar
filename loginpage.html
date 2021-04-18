@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>INTERACTIVE CALENDAR</title>
+<link rel="stylesheet" href="loginpage.css">
+ <script>
+        function myFunction(){
+            var un = document.forms["myForm"]["uname"].value;
+            var pw = document.forms["myForm"]["pass"].value;
+            if(un=="vishnu@kumar" && pw=="1234"){
+                window.location.href="homepage.html";
+				alert("SUCCESSFULLY LOGGED IN");
+				alert("WELCOME TO OUR WEBSITE \'VISHNU KUMAR\'");
+            }
+            else if(un=="payal@jangra" && pw=="1234"){
+                window.location.href="homepage.html";
+				alert("SUCCESSFULLY LOGGED IN");
+				alert("WELCOME TO OUR WEBSITE \'PAYAL\'");
+            }
+            else  if(un=="vishal@pundhir" && pw=="1234"){
+                window.location.href="homepage.html";
+				alert("SUCCESSFULLY LOGGED IN");
+				alert("WELCOME TO OUR WEBSITE \'VISHAL PUNDHIR\'");
+				
+            }
+            else{
+                alert("Invalid Username/Password");
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div id="divv">
+<form name="myForm" method="post">
+  <fieldset id="fset">  
+    <legend><h1>LOG IN:</h1></legend>
+    <label for="username">username:</label>
+    <input type="text" id="username" name="uname" list="lname" placeholder="username" required>
+	<datalist id="lname">
+	<option value="vishnu@kumar">
+	<option value="payal@jangra">
+	<option value="vishal@pundhir">
+	</datalist>
+	<br><br>
+    <label for="passwordd">password:</label>
+       <input type="password" id="passwordd" name="pass" placeholder="Enter your password" required><br><br><br>
+	   <input type="button" name="log" id="logButton" value="Login" onclick="myFunction()" >
+       <input type="reset" name="log" id="logButton" value="RESET"  style="background-color: rgba(255,0,0,0.7);">
+       <br><br>
+	   <button id="nu" type="submit"  name="nwusr">NEW USER</button>
+	   <button id="fp" type="submit"  name="fgpasswd">FORGOT PASSWORD</button>
+   </fieldset>
+</form>
+<div>
+</body>

@@ -1,0 +1,873 @@
+<html>
+<head>
+
+<title>HOME PAGE</title>
+<link rel="stylesheet" href="hompage.css">
+<script type="text/javascript">
+        function unhide(months)
+        {
+            document.getElementById(months).style.visibility="visible";
+        }
+        function hide(months,eve)
+        {
+            document.getElementById(months).style.visibility="hidden";
+			document.getElementById(eve).style.visibility="hidden";
+	
+        }
+        function hmuevents(eve,months){
+		document.getElementById(eve).style.visibility="visible";
+		document.getElementById(months).style.visibility="hidden";
+		}		
+
+
+    </script>
+</head>
+<body>
+<table>
+
+ <tr>
+    <th colspan="2"><h1>WELCOME TO THE INTERACTIVE CALENDAR</h1></th>
+   
+  </tr>
+  <tr id="menu">
+    <td colspan="2" >
+	<center><img src="handdown.png" height="25px" width="25px">MENU<img src="handdown.png" height="25px" width="25px"></center><br>
+	<center><a href="loginpage.html">LOG OUT</a>
+	</center><br><center><img src="smily.png" height="25px" width="25px"><a href="aboutus.html">ABOUT US</a><img src="smily.png" height="25px" width="25px"></center>
+	</td>
+   </tr>
+  <tr >
+   <td id="col1">
+   <div class="events" id="janevent" style="visibility:hidden;"> 
+<pre><b>01	FRI	New Year's Day
+18	MON	Martin Luther King Day
+18	MON	Civil Rights Day
+18	MON	Idaho Human Rights Day
+19	TUE	Confederate Heroes' Day
+27	WED	International Holocaust Remembrance Day</b></pre></div> 
+<div class="events" id="febevent" style="visibility:hidden;"> 
+<pre><b>01	MON	Black History Month
+12	FRI	Chinese New Year
+14	SUN	Valentine's Day
+14	SUN	Arizona Statehood Day
+15	MON	Presidents' Day</b></pre></div> 
+<div class="events" id="marevent" style="visibility:hidden;"> 
+<pre><b>02	TUE	Vermont Town Meeting Day
+17	WED	Saint Patrick´s Day
+17	WED	Evacuation Day
+25	THU	Maryland Day
+27	SAT	Passover
+28	SUN	Holi
+31	WED	César Chávez Day</b></pre></div> 
+<div class="events" id="aprevent" style="visibility:hidden;"> 
+<pre><b>02	FRI	Good Friday
+04	SUN	Easter Sunday
+12	MON	First Day of Ramadan
+16	FRI	Emancipation Day
+19	MON	Patriots' Day
+21	WED	San Jacinto Day</b></pre></div> 
+<div class="events" id="mayevent" style="visibility:hidden;"> 
+<pre><b>04	TUE	Rhode Island Independence Day
+09	SUN	Mother's Day
+31	MON	Memorial Day</b></pre></div> 
+<div class="events" id="junevent" style="visibility:hidden;"> 
+<pre><b>07	MON	Jefferson Davis' Birthday
+11	FRI	Kamehameha Day
+20	SUN	Father's Day
+20	SUN	West Virginia Day</b></pre></div> 
+<div class="events" id="julevent" style="visibility:hidden;"> 
+<pre><b>04	SUN	Independence Day</b></pre></div> 
+<div class="events" id="augevent" style="visibility:hidden;"> 
+<pre><b>16	MON	Bennington Battle Day
+20	FRI	Hawaii Statehood Day</b></pre></div> 
+<div class="events" id="sepevent" style="visibility:hidden;"> 
+<pre><b>02	THU	V-J Day
+06	MON	Labor Day
+12	SUN	Grandparents Day
+17	FRI	Constitution Day</b></pre></div> 
+<div class="events" id="octevent" style="visibility:hidden;"> 
+<pre><b>11	MON	Columbus Day (Most regions)
+18	MON	Alaska Day
+29	FRI	Nevada Day
+31	SUN	Halloween</b></pre></div> 
+<div class="events" id="novevent" style="visibility:hidden;"> 
+<pre><b>11	THU	Veterans Day
+25	THU	Thanksgiving Day
+26	FRI	Black Friday</b></pre></div> 
+<div class="events" id="decevent" style="visibility:hidden;"> 
+<pre><b>07	TUE	Pearl Harbor Remembrance Day
+24	FRI	Christmas Eve
+25	SAT	Christmas Day
+26	SUN	Kwanzaa
+31	FRI	New Year's Eve</b></pre></div> 
+   </td>
+   <td id="col2">
+   
+   <table id="monthlist">
+   <caption><h1>HOVER OVER ANY MONTH</h1></caption>
+   <tr>
+   <th colspan="7"><h1>MONTHS</h1></th>
+   </tr>
+   <tr>
+   <td colspan="2" onmouseover="unhide('january')" onmouseout="hide('january','janevent')" ondblclick="hmuevents('janevent','january')" ><center><h1>JANUARY</h1></center></td> <!-- -->
+   <td colspan="3" onmouseover="unhide('february')" onmouseout="hide('february','febevent')" ondblclick="hmuevents('febevent','february')"><center><h1>FEBRUARY</h1></center></td>
+   <td colspan="2" onmouseover="unhide('march')" onmouseout="hide('march','marevent')" ondblclick="hmuevents('marevent','march')"><center><h1>MARCH</h1></center></td>
+   </tr>
+   <tr>
+   <td colspan="2" onmouseover="unhide('april')" onmouseout="hide('april','aprevent')" ondblclick="hmuevents('aprevent','april')"><center><h1>APRIL</h1></center></td>
+   <td colspan="3" onmouseover="unhide('may')" onmouseout="hide('may','mayevent')" ondblclick="hmuevents('mayevent','may')"><center><h1>MAY</h1></center></td>
+   <td colspan="2" onmouseover="unhide('june')" onmouseout="hide('june','junevent')" ondblclick="hmuevents('junevent','june')"><center><h1>JUNE</h1></center></td>
+   </tr>
+   <tr>
+   <td colspan="2" onmouseover="unhide('july')" onmouseout="hide('july','julevent')" ondblclick="hmuevents('julevent','july')"><center><h1>JULY</h1></center></td>
+   <td colspan="3" onmouseover="unhide('august')" onmouseout="hide('august','augevent')" ondblclick="hmuevents('augevent','august')"><center><h1>AUGUST</h1></center></td>
+   <td colspan="2" onmouseover="unhide('september')" onmouseout="hide('september','sepevent')" ondblclick="hmuevents('sepevent','september')"><center><h1>SEPTEMBER</h1></center></td>
+   </tr>
+   <tr>
+   <td colspan="2" onmouseover="unhide('october')" onmouseout="hide('october','octevent')" ondblclick="hmuevents('octevent','october')"><center><h1>OCTOBER</h1></center></td>
+   <td colspan="3" onmouseover="unhide('november')" onmouseout="hide('november','novevent')" ondblclick="hmuevents('novevent','november')"><center><h1>NOVEMBER</h1></center></td>
+   <td colspan="2" onmouseover="unhide('december')" onmouseout="hide('december','decevent')" ondblclick="hmuevents('decevent','december')"><center><h1>DECEMBER</h1></center></td>
+   </tr>
+   </table>
+     <P id="note"><center><h5>NOTE::-DOUBLLE CLICK TO SEE EVENTS</h5></center></p>
+   
+ <table class="month-s" id="january" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>JANUARY<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+<tr>
+<td colspan="5"></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>31</h3></center></td>
+<td colspan="6"><center><h3></h3></center></td>
+</tr>
+</table>
+
+ <table class="month-s" id="february" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>FEBRUARY<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>28</h3></center></td>
+<td colspan="6"></td>
+
+</tr>
+</table>
+
+<table class="month-s" id="march" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>MARCH<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+<td><center><h3>31</h3></center></td>
+<td colspan="3"></td>
+
+</tr>
+
+</table>
+<table class="month-s" id="april" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>APRIL<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td colspan="4"></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+<td></td>
+</tr>
+
+</table>
+<table class="month-s" id="may" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>MAY<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td colspan="6"></td>
+<td><center><h3>1</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>30</h3></center></td>
+<td><center><h3>31</h3></center></td>
+<td colspan="5"></td>
+</tr>
+</table>
+<table class="month-s" id="june" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>JUNE<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td colspan="2"></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+<td colspan="3"></td>
+</tr>
+</table>
+<table class="month-s" id="july" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>JULY<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td colspan="4"></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+<td><center><h3>31</h3></center></td>
+</tr>
+
+</table>
+<table class="month-s" id="august" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>AUGUST<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+<td><center><h3>31</h3></center></td>
+<td colspan="4"></td>
+
+</tr>
+
+</table>
+<table class="month-s" id="september" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>SEPTEMBER<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td colspan="3"></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+<td colspan="2"></td>
+</tr>
+</table>
+<table class="month-s" id="october" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>OCTOBER<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+<tr>
+<td colspan="5"></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>31</h3></center></td>
+<td colspan="6"><center><h3></h3></center></td>
+</tr>
+</table>
+<table class="month-s" id="november" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>NOVEMBER<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+<td colspan="4"></td>
+</tr>
+</table>
+<table class="month-s" id="december" style="visibility:hidden">
+<caption>
+<h1>2021</h1></caption>
+<tr>
+<th colspan="7"><h4>DECEMBER<h4></th>
+</tr>
+<tr>
+<th>SUN</th>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THR</th>
+<th>FRI</th>
+<th>SAT</th>
+</tr>
+
+<tr>
+<td colspan="3"></td>
+<td><center><h3>1</h3></center></td>
+<td><center><h3>2</h3></center></td>
+<td><center><h3>3</h3></center></td>
+<td><center><h3>4</h3></center></td>
+</tr>
+
+<tr>
+<td><center><h3>5</h3></center></td>
+<td><center><h3>6</h3></center></td>
+<td><center><h3>7</h3></center></td>
+<td><center><h3>8</h3></center></td>
+<td><center><h3>9</h3></center></td>
+<td><center><h3>10</h3></center></td>
+<td><center><h3>11</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>12</h3></center></td>
+<td><center><h3>13</h3></center></td>
+<td><center><h3>14</h3></center></td>
+<td><center><h3>15</h3></center></td>
+<td><center><h3>16</h3></center></td>
+<td><center><h3>17</h3></center></td>
+<td><center><h3>18</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>19</h3></center></td>
+<td><center><h3>20</h3></center></td>
+<td><center><h3>21</h3></center></td>
+<td><center><h3>22</h3></center></td>
+<td><center><h3>23</h3></center></td>
+<td><center><h3>24</h3></center></td>
+<td><center><h3>25</h3></center></td>
+</tr>
+<tr>
+<td><center><h3>26</h3></center></td>
+<td><center><h3>27</h3></center></td>
+<td><center><h3>28</h3></center></td>
+<td><center><h3>29</h3></center></td>
+<td><center><h3>30</h3></center></td>
+<td><center><h3>31</h3></center></td>
+<td></td>
+</tr>
+</table>
+
+
+</body>
+</html>

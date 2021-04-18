@@ -1,0 +1,142 @@
+fieldset{
+background-image:url(images/aboutus.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+height:24em;
+margin:15px 15px;
+padding:15% 0% 0% 35%;
+}
+
+
+/* vishnu detail element */
+#vk{
+width:20%;
+height:29px;
+padding:15px 0px 0px 120px;
+background-color:rgba(0,0,0,0.4);
+position:absolute;
+top:15%;
+left:16%;
+}
+
+/* payal detail element */
+#py{
+width:16%;
+height:29px;
+padding:15px 0px 0px 150px;
+background-color:rgba(0,0,0,0.4);
+position:absolute;
+top:15%;
+left:45%;
+}
+
+/* vishal detail element */
+#vp{
+width:165px;
+height:29px;
+padding:15px 35px 0px 150px;
+background-color:rgba(0,0,0,0.4);
+position:absolute;
+top:15%;
+right:30px;
+
+}
+
+/* about us positioning*/
+legend{
+margin:5em;
+}
+
+/* vishnu image positioning */
+#imgvk{
+position:absolute;
+left:25%;
+top:45px;
+height:140px; 
+width:140px;
+border:10px solid rgba(5, 0, 174,0.031);
+border-radius:130px; 
+}
+
+/* vishal image positioning */
+#imgvp{
+position:absolute;
+right:26%;
+top:45px;
+height:140px; 
+width:140px;
+border:10px solid rgba(5, 0, 174,0.031);;
+border-radius:130px; 
+}
+/* payal image positioning */
+#imgpy{
+position:absolute;
+right:26%;
+top:45px;
+height:140px; 
+width:140px;
+border:10px solid rgba(5, 0, 174,0.031);
+border-radius:130px; 
+}
+
+p{
+position:absolute;
+background-color:rgba(52,216,176,0.5);
+border-radius:10px;
+top:13em;
+right:12px;
+}
+
+strong{
+font-size:20px;
+}
+
+/*  navigation*/
+div{
+position:absolute;
+top:22%;
+left:2%;
+
+}
+.vertical-menu { 
+position:absolute;
+left:30px;
+  width: 185px;
+ height: 150px;
+
+  
+}
+
+.vertical-menu a {
+  
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+
+ .vertical-menu p{
+  background-color:rgba(0,0,0,0.4);
+  color: black;
+ color-radius:0px;
+height:43px;
+width:185px;
+border-radius:0px;
+position:absolute;
+top:-61px;
+left:0px;
+
+}
+
+
+
+
+
+
+
